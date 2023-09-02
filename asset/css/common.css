@@ -4501,7 +4501,7 @@ footer .footer-top ul li a {
 }
 
 footer .footer-bottom {
-    padding: 24px 0px 40px;
+    padding: 24px 0px 60px;
 }
 
 footer .footer-bottom .container {
@@ -5204,7 +5204,7 @@ footer .footer-right ul li a img {
     }
 
     .no-bg .title-box h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .no-bg .title-box p {
@@ -5235,7 +5235,7 @@ footer .footer-right ul li a img {
     margin: 20px auto;
 }
 
-.middle-title-box h3 {
+c {
     font-size: 28px;
     font-weight: bold;
 }
@@ -5247,6 +5247,12 @@ footer .footer-right ul li a img {
 }
 
 @media (max-width: 991px) {
+    .middle-title-box h3 {
+        font-size: 22px;
+    }
+    .middle-title-box p {
+        font-size: 14px;
+    }
     .middle-title-box + img {
         max-width: 90vw;
     }
@@ -7871,13 +7877,14 @@ footer .footer-right ul li a img {
     margin-top: -50px;
     padding-top: 120px;
     height: 750px;
-    background: url("../images/img_main_02.png") center center / cover no-repeat;
+    background: url("../images/img_main_02.png") no-repeat center / cover;
 }
 
 .main-box-02 .title-box p {
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 20px;
     line-height: 1.5;
+    letter-spacing: -0.05em;
 }
 
 .main-box-03 {
@@ -7980,7 +7987,7 @@ footer .footer-right ul li a img {
 
     .main-box-02 {
         padding-top: 100px;
-        height: 650px;
+        height: 600px;
     }
     
     .main-box-04 .list-top > div img {
