@@ -4459,6 +4459,16 @@ header .header-mnb {
     }
 }
 
+@media (max-height: 720px) {
+    header .header-mnb .mnb-body .mnb-body-menu {
+            margin-top: 30px;
+    }
+    
+    header .header-mnb .mnb-body .mnb-body-menu ul li a {
+        padding: 15px;
+    }    
+}
+
 footer {
     background: rgb(56, 56, 56);
 }
