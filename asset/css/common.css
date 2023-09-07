@@ -1153,7 +1153,8 @@ footer .footer-right ul li a img {
 
 .middle-title-box + img {
     display: block;
-    max-width: 70vw;
+    width: 70vw;
+    max-width: 800px;
     margin: 20px auto;
 }
 
