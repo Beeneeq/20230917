@@ -3798,11 +3798,10 @@ footer .footer-right ul li a img {
     display: flex;
     justify-content: center;
     margin-top: -50px;
-    padding-top: 6.5vw;
-    min-height: 750px;
-    height: 50vw;
-    background: url(
-    "../images/img_main_02.png") no-repeat center bottom -10px / cover;
+    padding-top: 6vw;
+    min-height: 700px;
+    height: 42vw;
+    background: #f5f5f7 url(../images/img_main_02.png) no-repeat center bottom / 80%;
 }
 
 .main-box-02 .title-box p {
@@ -3810,6 +3809,14 @@ footer .footer-right ul li a img {
     margin-top: 20px;
     line-height: 1.5;
     letter-spacing: -0.05em;
+}
+
+@media (max-width: 1500px) {
+    .main-box-02 {
+        min-height: auto;
+        height: 52vw;
+        padding-top: 10vw;
+    }
 }
 
 @media (max-width: 991px) {
