@@ -188,14 +188,8 @@ header .header-gnb .side-wrap a {
     font-weight: 600;
 }
 
-header .header-gnb .side-btn {
-    background: rgb(220, 51, 71);
-    color: rgb(255, 255, 255);
-    width: 100px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    border-radius: 30px;
+header .header-gnb .side-btn img {
+    width: 50px;
 }
 
 header .header-gnb a.menu {
@@ -1195,7 +1189,7 @@ footer .footer-right ul li a img {
 .img-flex-box {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 20px 0;
     text-align: center;
 }
 
@@ -1205,6 +1199,7 @@ footer .footer-right ul li a img {
 
 .img-flex-item img {
     width: 70%;
+    margin-right: -5px;
 }
 
 .img-flex-item h4 {
@@ -1228,10 +1223,12 @@ footer .footer-right ul li a img {
 }
 
 @media (max-width: 991px) {
+    .img-flex-item h4 {
+        font-size: 18px;
+    }
     .img-flex-box {
         flex-direction: column;
         align-items: center;
-        margin-right: -20px;
     }
 }
 
@@ -3930,7 +3927,7 @@ footer .footer-right ul li a img {
 @media (max-width: 991px) {
     .main-box-02 {
         padding-top: 100px;
-        min-height: calc(60vw + 180px);
+        min-height: calc(60vw + 220px);
         height: auto;
         background: url("../images/img_main_02_mob.png") no-repeat center bottom -19px / 60vw;
     }
@@ -3989,7 +3986,7 @@ footer .footer-right ul li a img {
 @media (max-width: 650px) {
     .main-box-02 {
         padding-top: 100px;
-        min-height: calc(80vw + 180px);
+        min-height: calc(80vw + 220px);
         height: auto;
         background: url("../images/img_main_02_mob.png") no-repeat center bottom -19px / 80vw;
     }
