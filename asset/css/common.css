@@ -3798,9 +3798,8 @@ footer .footer-right ul li a img {
     display: flex;
     justify-content: center;
     margin-top: -50px;
-    padding-top: 120px;
+    padding-top: 6.5vw;
     min-height: 750px;
-    max-height: 950px;
     height: 50vw;
     background: url(
     "../images/img_main_02.png") no-repeat center bottom -10px / cover;
