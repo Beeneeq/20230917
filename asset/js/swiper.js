@@ -17,7 +17,7 @@ var swiper = new Swiper(".main-box-03-list-wrap.swiper", {
 		prevEl: ".main-box-03-list-wrap .swiper-button-prev",
 	},
 	autoplay: true,
-	speed: 2000,
+	speed: 1000,
 });
 
 var swiper = new Swiper(".main-box-06-list-wrap.swiper", {
