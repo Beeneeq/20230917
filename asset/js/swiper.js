@@ -16,10 +16,8 @@ var swiper = new Swiper(".main-box-03-list-wrap.swiper", {
 		nextEl: ".main-box-03-list-wrap .swiper-button-next",
 		prevEl: ".main-box-03-list-wrap .swiper-button-prev",
 	},
-	autoplay: {
-		delay: 2000,
-		disableOnInteraction: false,
-	  },
+	autoplay: true,
+	speed: 2000,
 });
 
 var swiper = new Swiper(".main-box-06-list-wrap.swiper", {
