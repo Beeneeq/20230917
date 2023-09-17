@@ -68,6 +68,26 @@ $(document).on("change", ".check-box[data-group] input", function(){
 	}
 });
 
+
+// 레이어 팝업
+
+function openLayer(num) {
+	$('html').addClass('fixed');
+	$('.dim-bg').show().animate({opacity: '.75'}, 300);
+	$('[data-layer="layer0'+num+'"]').show().animate({opacity: '1'}, 300);
+}
+
+function closeLayer(num) {
+	$('html').removeClass('fixed');
+	$('.dim-bg').animate({opacity: '0'}, 300, function() {
+		$('.dim-bg').hide();
+	})
+	$('[data-layer="layer0'+num+'"]').animate({opacity: '0'}, 300, function() {
+		$('[data-layer="layer0'+num+'"]').hide();
+	})
+}
+
+
 $(window).scroll(function(){
 	var scl = $(this).scrollTop();
 	var price_len = $(".price-box").length;
@@ -115,7 +135,9 @@ $( document ).ready(function() {
 	});
 
 	function changeMenu(scroll) {
-		const menuList = ['.main-box-02','.main-box-03','.main-box-04','.main-box-05'];
+		if($('.main-box-02').length < 1 ) return;
+
+		const menuList = ['.main-box-03','.main-box-04','.main-box-05','.main-box-06'];
 
 		for(let i = 0; i < menuList.length; i++) {
 			if (scroll > $(menuList[i]).offset().top - 150) {
@@ -168,4 +190,21 @@ $(function() {
 
 	// 초기값을 오늘 날짜로 설정
 	$('.datepicker').datepicker('setDate', 'today'); // (-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)     
+});
+
+$(document).ready(function() {
+
+	// 0830 자세히보기 버튼
+
+	$('.btn-more').on('click', function() {
+		$(this).next().slideToggle();
+		$(this).toggleClass('off');
+	})
+
+	// 결제수단 선택
+
+	$('.method-box ul li a').on('click', function() {
+		$('.method-box ul li').removeClass('on');
+		$(this).closest('li').addClass('on');
+	})
 });

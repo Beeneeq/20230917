@@ -1,8 +1,33 @@
-var swiper = new Swiper(".price-box .swiper-container", {
-	slidesPerView: 3,
-	freeMode: true,
+var swiper = new Swiper(".main-box-04-list-wrap.swiper", {
+	slidesPerView: 1,
+	loop: true,
+	loopAdditionalSlides: 1,
 	navigation: {
-		nextEl: ".price-box .swiper-button-next",
-		prevEl: ".price-box .swiper-button-prev",
+		nextEl: ".main-box-04-list-wrap .swiper-button-next",
+		prevEl: ".main-box-04-list-wrap .swiper-button-prev",
+	},
+});
+
+var swiper = new Swiper(".main-box-03-list-wrap.swiper", {
+	slidesPerView: 1,
+	loop: true,
+	loopAdditionalSlides: 1,
+	navigation: {
+		nextEl: ".main-box-03-list-wrap .swiper-button-next",
+		prevEl: ".main-box-03-list-wrap .swiper-button-prev",
+	},
+	autoplay: {
+		delay: 2000,
+		disableOnInteraction: false,
+	  },
+});
+
+var swiper = new Swiper(".main-box-06-list-wrap.swiper", {
+	slidesPerView: 1,
+	loop: true,
+	loopAdditionalSlides: 1,
+	navigation: {
+		nextEl: ".main-box-06-list-wrap .swiper-button-next",
+		prevEl: ".main-box-06-list-wrap .swiper-button-prev",
 	},
 });
