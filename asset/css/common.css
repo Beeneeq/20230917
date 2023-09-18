@@ -227,6 +227,10 @@ header .header-gnb a.service span {
     margin-left: 5px;
 }
 
+header .header-gnb h1 a img {
+    width: 120px;
+}
+
 header .header-mnb {
     display: none;
 }
@@ -270,6 +274,10 @@ header .header-mnb {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    header .header-gnb h1 a img {
+        width: 113px;
     }
 
     header .header-mnb {
@@ -381,6 +389,10 @@ footer .footer-top .container {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+
+footer .footer-top h2 img {
+    width: 113px;
 }
 
 footer .footer-top ul {
@@ -2021,7 +2033,7 @@ footer.type01 .kakao-box a {width:100%; justify-content:center;}
 
 .main-box-01 {
     background: url("../images/bg_main_01.png") center center / cover no-repeat;
-    padding: 160px 0px;
+    padding: 100px 0px;
     margin: -40px 0px 0px;
 }
 
@@ -2113,7 +2125,7 @@ footer.type01 .kakao-box a {width:100%; justify-content:center;}
 
 @media (max-width: 991px) {
     .main-box-01 {
-        background-position: right -150px bottom;
+        background-position: right -90px bottom;
     }
     .main-box-01 h3 {
         font-size: 30px;
@@ -2354,19 +2366,15 @@ footer.type01 .kakao-box a {width:100%; justify-content:center;}
     font-weight: bold;
 }
 
-.main-box-06-item.first img {
-    margin-top: 60px;
-    width: 500px;
-}
-
 .main-box-06-item img {
-    margin-top: 32px;
-    width: 310px;
+    margin-top: 30px;
+    width: 400px;
 }
 
 @media (max-width: 768px) {
-    .main-box-06-item.first img {
-        width: 100%;
+    .main-box-06-item img {
+        margin-top: 10px;
+        width: 70%;
     }
     .main-box-04,
     .main-box-04-1,
