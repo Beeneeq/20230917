@@ -2150,7 +2150,7 @@ footer.type01 .kakao-box a {width:100%; justify-content:center;}
 @media (max-width: 991px) {
     .main-box-01 {
         padding: 100px 0;
-        background: url("../images/bg_main_01_mob.png") no-repeat right -150px bottom / cover;
+        background: url("../images/bg_main_01_mob.png") no-repeat right bottom / cover;
     }
     .main-box-01 h3 {
         font-size: 30px;
