@@ -228,7 +228,7 @@ header .header-gnb a.service span {
 }
 
 header .header-gnb h1 a img {
-    width: 118px;
+    width: 134px;
     image-rendering: -moz-crisp-edges; /* firefox */
     image-rendering: -o-crisp-edges; /* opera */
     image-rendering: -webkit-optimize-contrast; /* chrome(비표준) */
