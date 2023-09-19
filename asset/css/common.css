@@ -228,7 +228,13 @@ header .header-gnb a.service span {
 }
 
 header .header-gnb h1 a img {
-    width: 120px;
+    width: 118px;
+    image-rendering: -moz-crisp-edges; /* firefox */
+    image-rendering: -o-crisp-edges; /* opera */
+    image-rendering: -webkit-optimize-contrast; /* chrome(비표준) */
+    image-rendering: crisp-edges;
+    transform: translateZ(0);
+    backface-visibility:hidden;
 }
 
 header .header-mnb {
@@ -277,7 +283,13 @@ header .header-mnb {
     }
 
     header .header-gnb h1 a img {
-        width: 113px;
+        width: 118px;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+        transform: translateZ(0);
+        backface-visibility: hidden;
     }
 
     header .header-mnb {
@@ -315,7 +327,13 @@ header .header-mnb {
     }
 
     header .header-mnb .mnb-head h2 a img {
-        width: 113px;
+        width: 118px;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+        transform: translateZ(0);
+        backface-visibility: hidden;
     }
 
     header .header-mnb .mnb-head a.close {
@@ -392,7 +410,13 @@ footer .footer-top .container {
 }
 
 footer .footer-top h2 img {
-    width: 113px;
+    width: 115px;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }
 
 footer .footer-top ul {
